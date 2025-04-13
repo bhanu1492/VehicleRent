@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Payment Details</h1>
+  </header>
+
+  <section class="form-container">
+    <form action="submit_payment.php" method="POST">
+      <label>Booking ID:</label>
+      <input type="number" name="booking_id" required>
+
+      <label>Payment Date:</label>
+      <input type="date" name="payment_date" required>
+
+      <label>Payment Method:</label>
+      <select name="payment_method" required>
+        <option value="Cash">Cash</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="UPI">UPI</option>
+      </select>
+
+      <label>Amount Paid:</label>
+      <input type="number" name="amount_paid" step="0.01" required>
+
+      <button type="submit">Make Payment</button>
+    </form>
+  </section>
+</body>
+</html>

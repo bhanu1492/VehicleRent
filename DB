@@ -1,0 +1,2 @@
+CREATE DATABASE VehicleRentalSystem;
+USE VehicleRentalSystem;
